@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans";
+  /* background-image: linear-gradient(to bottom, #e3eeff 0%, #c5dbfb 100%); */
+  display: flex;
+  min-height: 100vh;
+  /* border: 100vh; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #111927;
+}
+
+.container {
+  margin-top: 90px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(63, 63, 63, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 90%;
+  height: auto;
+
+  /* width:90%;
+    height: auto;
+    background-color: #fdffe2;
+    border-radius: 10px;
+    box-shadow: 0  10px 20px rgba(0, 0, 0, 0.25);
+    margin: 10px */
+}
+
+h1 {
+  margin-top: 5%;
+  margin-bottom: -3%;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 18px;
+  /* background-color: white; */
+  border-radius: 6px;
+  width: 100px;
+  border: 0;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: inset 3px 3px 5px #9b9b9b, inset -3px -3px 5px #ffffff;
+}
+
+.btn {
+  border: 0;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  /* box-shadow:  2px 2px 3px #9b9b9b,
+                -2px -2px 3px #ffffff; */
+}
+
+.btn:hover {
+  background-color: green;
+  /* color: whitesmoke; */
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: 500;
+  margin: 10px;
+  display: none;
+}
+
+.gallery img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  /* margin: auto;
+  display: block; */
+  /* box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.25); */
+}
+
+.gallery {
+    display: none;
+}
