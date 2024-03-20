@@ -13,17 +13,9 @@ async function fetchImage (){
     }
 
     try {
-        await fetch(`https://api.unsplash.com/photos?per_page=
-        ${inputValue}&page=${Math.round(
-          Math.random() * 1000
-        )}&
-        client_id=Z5JAbmlESylnHwL4jygdjaEhIeTAdXn8L6nIOP2E_AU`
-        )  // Add semicolon here
-        .then((res) => 
-          res.json().then((data) => {
-            console.log(data);
-          })
-        );
+      const response = await fetch(`https://api.unsplash.com/photos?per_page=${inputValue}&page=${Math.round(Math.random() * 1000)}&client_id=8YzVxy9oq5w8iacwsgP_3mB0oWItgbn_N7wTSz916yM`);
+      const data = await response.json();
+      console.log(data)
         
 
         errorMessageEl.style.display = "none";
